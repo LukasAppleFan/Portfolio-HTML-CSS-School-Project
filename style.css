@@ -1,0 +1,319 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 120px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 60px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a .home-icon {
+    margin-right: 5px;
+}
+
+.section {
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: calc(100vh - 140px);
+    margin-top: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header {
+    /*color: #fff;*/
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.intro-section {
+    background-color: #ffffff;
+    border-left: 4px solid #007bff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    background-image: linear-gradient(to right, #f9f9f9, #ffffff);
+}
+
+.intro-section p {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Code pour la section footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* Style pour les séparateurs */
+.social-links .separator {
+    color: #fff;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Code pour la section Qui je suis */
+#qui-je-suis .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+#qui-je-suis img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#qui-je-suis h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#qui-je-suis p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Code pour la section Compétences */
+#competences {
+    background-color: #fff;
+    padding: 25px 25px;
+}
+
+#competences h2 {
+    text-align: center;
+    font-size: 1.9rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#competences h3 {
+    font-size: 1.4rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin: 8px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #666;
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.skills-list .emoji {
+    margin-right: 8px;
+    font-size: 1.45rem;
+}
+
+/* Code pour la section Projets */
+#projets {
+    background-color: #fff;
+    padding: 2px 20px;
+}
+
+#projets h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project {
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Code pour la section Contact */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+form button {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
