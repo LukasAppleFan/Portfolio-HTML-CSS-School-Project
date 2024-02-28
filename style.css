@@ -58,6 +58,12 @@ nav ul li a:hover, nav ul li a:focus {
     text-decoration: none;
 }
 
+@media (hover: none) {
+    nav ul li a:hover {
+        font-size: 18px;
+    }
+}
+
 nav ul li a .home-icon {
     margin-right: 5px;
 }
@@ -154,6 +160,13 @@ a:hover {
     text-decoration: none;
 }
 
+@media (hover: none) {
+    .cv-button:hover {
+        background-color: #007bff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+}
+
 /* Code pour la section footer */
 footer {
     background-color: #333;
@@ -223,6 +236,12 @@ form button {
 
 form button:hover {
     background-color: #555;
+}
+
+@media (hover: none) {
+    form button:hover {
+        background-color: #333;
+    }
 }
 
 /* Code pour la section Qui je suis */
@@ -385,6 +404,12 @@ form button {
     text-decoration: underline;
 }
 
+@media (hover: none) {
+    #contact a:hover {
+        text-decoration: none;
+    }
+}
+
 /* Bouton pour remonter en haut de la page */
 .back-to-top, .back-to-top:hover, .back-to-top:focus {
     text-decoration: none;
@@ -411,6 +436,7 @@ form button {
     background-color: #444;
 }
 
+/* Code pour les écrans tactiles */
 @media (hover: none) {
     .back-to-top:hover {
         background-color: #333;
