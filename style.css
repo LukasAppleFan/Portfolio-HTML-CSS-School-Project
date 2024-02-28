@@ -49,12 +49,16 @@ nav ul li a .home-icon {
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 20px;
-    height: calc(100vh - 140px);
     margin-top: 120px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.section:first-of-type {
+    margin-top: 120px;
+}
+
 
 header {
     /*color: #fff;*/
@@ -245,14 +249,14 @@ form button:hover {
 /* Code pour la section Projets */
 #projets {
     background-color: #fff;
-    padding: 2px 20px;
+    padding: 20px; /* Augmente le padding pour créer un espace uniforme autour */
 }
 
 #projets h2 {
     text-align: center;
     font-size: 2rem;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Ajusté pour plus de cohérence */
 }
 
 .projects-container {
@@ -263,7 +267,7 @@ form button:hover {
 
 .project {
     background-color: #f7f7f7;
-    padding: 15px 20px;
+    padding: 15px; /* Garder le padding interne pour chaque projet */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
