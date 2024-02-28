@@ -386,7 +386,7 @@ form button {
 }
 
 /* Bouton pour remonter en haut de la page */
-.back-to-top, .back-to-top:hover, .back-to-top:focus {
+.back-to-top, .back-to-top:hover, .back-to-top:focus, .back-to-top:active {
     text-decoration: none;
     position: fixed;
     bottom: 10px;
