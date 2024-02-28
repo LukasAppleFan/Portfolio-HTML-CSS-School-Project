@@ -69,20 +69,19 @@ main {
     padding: 20px;
 }
 
+/* Code pour la section intro */
 .intro-section {
     background-color: #ffffff;
     border-left: 4px solid #007bff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    /*margin: 20px 0;*/
     margin-bottom: 200px;
-    background-image: linear-gradient(to right, #f9f9f9, #ffffff);
+    background-image: linear-gradient(to right, #e6e6e6, #ffffff);
 }
 
 .intro-section p {
     color: #333;
-    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.6;
