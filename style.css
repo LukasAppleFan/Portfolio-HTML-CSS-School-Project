@@ -94,10 +94,6 @@ h1 {
     margin: 0;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 .nom {
     color: #0047ab;
 }
@@ -411,7 +407,7 @@ form button {
 }
 
 /* Bouton pour remonter en haut de la page */
-.back-to-top, .back-to-top:hover, .back-to-top:focus {
+.back-to-top {
     text-decoration: none;
     position: fixed;
     bottom: 10px;
@@ -428,23 +424,13 @@ form button {
     transition: background-color 0.3s ease;
 }
 
-@media (hover: none) {
-    .back-to-top:hover {
-        background-color: #333;
-    }
-}
-
-.back-to-top .arrow, .back-to-top .text {
-    text-decoration: none;
-}
-
 .back-to-top:hover, .back-to-top:focus {
     background-color: #444;
 }
 
-/* Code pour les écrans tactiles */
+/* Code pour les appareils mobiles */
 @media (hover: none) {
-    .back-to-top:hover {
+    .back-to-top:hover, .back-to-top:focus {
         background-color: #333;
     }
 }
@@ -452,6 +438,7 @@ form button {
 .back-to-top .arrow {
     font-weight: bold;
     font-size: 24px;
+    text-decoration: none;
 }
 
 .back-to-top .text {
