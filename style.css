@@ -80,16 +80,20 @@ h1 {
     margin: 0;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .nom {
     color: #0047ab;
 }
 
 .rocket {
-    font-size: 1.2em; /* Taille de la fusée */
-    vertical-align: middle; /* Alignement vertical */
+    font-size: 1.2em;
+    vertical-align: middle;
 }
 
-/* Code pour la section intro */
+/* Code pour la section d'introduction */
 .intro-section {
     background-color: #ffffff;
     border-left: 4px solid #007bff;
@@ -97,7 +101,20 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-bottom: 200px;
+    display: flex;
+    align-items: center;
     background-image: linear-gradient(to right, #e6e6e6, #ffffff);
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-photo {
+    max-width: 224px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    margin-left: 20px;
 }
 
 .intro-section p {
@@ -106,10 +123,6 @@ h1 {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 16px;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* Code pour la section footer */
