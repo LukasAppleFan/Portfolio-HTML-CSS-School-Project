@@ -125,6 +125,26 @@ a:hover {
     margin-bottom: 16px;
 }
 
+.cv-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cv-button:hover, .cv-button:focus {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
 /* Code pour la section footer */
 footer {
     background-color: #333;
