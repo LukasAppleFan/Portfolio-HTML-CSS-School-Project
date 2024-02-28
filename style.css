@@ -331,51 +331,36 @@ form button {
 }
 
 /* Bouton pour remonter en haut de la page */
-.back-to-top {
+.back-to-top, .back-to-top:hover, .back-to-top:focus {
+    text-decoration: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: #333;
     color: #fff;
-    border-radius: 15px;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease, border-radius 0.3s ease;
-    text-decoration: none;
-}
-
-.back-to-top:hover, .back-to-top:focus {
-    border-radius: 20px;
-    width: auto;
-    padding: 10px 20px;
-    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .back-to-top .arrow, .back-to-top .text {
     text-decoration: none;
 }
 
-.back-to-top .text {
-    display: none;
-    font-size: 16px;
-    margin-left: 10px;
-}
-
-.back-to-top:hover .text {
-    display: inline;
+.back-to-top:hover, .back-to-top:focus {
+    background-color: #444;
 }
 
 .back-to-top .arrow {
     font-weight: bold;
     font-size: 24px;
-    transform: scale(1);
-    transition: transform 0.3s ease;
 }
 
-.back-to-top:hover .arrow {
-    transform: scale(1.2);
+.back-to-top .text {
+    display: none;
 }
