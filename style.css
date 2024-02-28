@@ -131,6 +131,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 0.5em 0;
+    padding-bottom: calc(0.5em + env(safe-area-inset-bottom, 0)); /* Ajoute de l'espace de sécurité si nécessaire */
     margin-top: 20px;
 }
 
@@ -160,13 +161,13 @@ footer {
     margin-right: 8px;
 }
 
-/* Style pour les séparateurs */
 .social-links .separator {
     color: #fff;
     margin: 0 5px;
     vertical-align: middle;
 }
 
+/* Code pour la section formulaire */
 form {
     margin-top: 20px;
 }
