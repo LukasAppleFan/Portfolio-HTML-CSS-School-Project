@@ -141,7 +141,6 @@ footer {
     vertical-align: middle;
 }
 
-
 form {
     margin-top: 20px;
 }
@@ -249,14 +248,14 @@ form button:hover {
 /* Code pour la section Projets */
 #projets {
     background-color: #fff;
-    padding: 20px; /* Augmente le padding pour créer un espace uniforme autour */
+    padding: 20px;
 }
 
 #projets h2 {
     text-align: center;
     font-size: 2rem;
     color: #333;
-    margin-bottom: 20px; /* Ajusté pour plus de cohérence */
+    margin-bottom: 20px;
 }
 
 .projects-container {
@@ -267,7 +266,7 @@ form button:hover {
 
 .project {
     background-color: #f7f7f7;
-    padding: 15px; /* Garder le padding interne pour chaque projet */
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -329,4 +328,54 @@ form button {
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+/* Bouton pour remonter en haut de la page */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease, border-radius 0.3s ease;
+    text-decoration: none;
+}
+
+.back-to-top:hover, .back-to-top:focus {
+    border-radius: 20px;
+    width: auto;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.back-to-top .arrow, .back-to-top .text {
+    text-decoration: none;
+}
+
+.back-to-top .text {
+    display: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.back-to-top:hover .text {
+    display: inline;
+}
+
+.back-to-top .arrow {
+    font-weight: bold;
+    font-size: 24px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.back-to-top:hover .arrow {
+    transform: scale(1.2);
 }
