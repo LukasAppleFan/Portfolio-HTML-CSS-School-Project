@@ -428,6 +428,12 @@ form button {
     transition: background-color 0.3s ease;
 }
 
+@media (hover: none) {
+    .back-to-top:hover {
+        background-color: #333;
+    }
+}
+
 .back-to-top .arrow, .back-to-top .text {
     text-decoration: none;
 }
