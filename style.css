@@ -1,21 +1,21 @@
 body, html {
     margin: 0;
     padding: 0;
-    scroll-padding-top: 120px; /* Espacement au-dessus du contenu lors du défilement vers une ancre */
-    scroll-behavior: smooth; /* Effet de défilement fluide */
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, sans-serif;
-    /* Suppression du padding-top ici pour éviter un espace blanc au-dessus du contenu */
-    background-color: #333; /* Couleur de fond uniforme pour l'arrière-plan */
-    background-image: linear-gradient(to bottom right, #bdc3c7, #2c3e50); /* Gradient appliqué sur le fond #333 */
-    background-attachment: fixed; /* Le fond reste fixe lors du défilement */
+    padding-top: 60px;
+    background-color: #333;
+    background-image: linear-gradient(to bottom right, #bdc3c7, #2c3e50);
+    background-attachment: fixed;
 }
 
 main {
-    margin-top: 60px; /* Ajustement pour l'espacement en haut du contenu principal */
-    padding: 20px; /* Espacement intérieur pour le contenu de <main> */
+    margin-top: 60px;
+    padding: 20px;
 }
 
 nav {
