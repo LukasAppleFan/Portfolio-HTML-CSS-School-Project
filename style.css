@@ -1,3 +1,10 @@
+:root {
+    --safe-area-inset-top: env(safe-area-inset-top);
+    --safe-area-inset-right: env(safe-area-inset-right);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    --safe-area-inset-left: env(safe-area-inset-left);
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -440,4 +447,34 @@ form button {
 
 .back-to-top .text {
     display: none;
+}
+
+/* Code pour gérer les iPhone avec encoche en mode paysage sous WebKit avec les Safe Areas */
+
+body {
+    padding: var(--safe-area-inset-top) var(--safe-area-inset-right) var(--safe-area-inset-bottom) var(--safe-area-inset-left);
+}
+
+nav {
+    padding-left: var(--safe-area-inset-left);
+    padding-right: var(--safe-area-inset-right);
+}
+
+nav {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100vw;
+    margin-left: calc(-1 * var(--safe-area-inset-left));
+    margin-right: calc(-1 * var(--safe-area-inset-right));
+    /* Ensure it doesn't float over content */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin-bottom: calc(-1 * var(--safe-area-inset-bottom));
 }
