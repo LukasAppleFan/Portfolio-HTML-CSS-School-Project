@@ -1,5 +1,9 @@
 # This is a project for school.
 
+## PWA version
+
+This is a PWA version of the portfolio website. It is built using HTML, CSS, and JavaScript.
+
 ## A simple Portfolio website
 
 This is a simple portfolio website for a school project. It is built using HTML and CSS only.
