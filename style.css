@@ -1,3 +1,4 @@
+/* Code pour gérer les iPhone avec encoche en mode paysage sous WebKit avec les Safe Areas */
 :root {
     --safe-area-inset-top: env(safe-area-inset-top);
     --safe-area-inset-right: env(safe-area-inset-right);
