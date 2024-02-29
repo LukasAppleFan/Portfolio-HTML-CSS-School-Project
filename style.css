@@ -14,10 +14,11 @@ body, html {
 
 body {
     font-family: Arial, sans-serif;
-    padding-top: 60px;
     background-color: #333;
     background-image: linear-gradient(to bottom right, #bdc3c7, #2c3e50);
     background-attachment: fixed;
+    padding: var(--safe-area-inset-top) var(--safe-area-inset-right) var(--safe-area-inset-bottom) var(--safe-area-inset-left);
+    padding-top: 60px;
 }
 
 main {
@@ -32,9 +33,13 @@ nav {
     width: 100%;
     z-index: 1000;
     background-color: rgba(51,51,51,0.8);
-    padding: 20px 0;
     -webkit-backdrop-filter: blur(10px); /* Pour Safari */
     backdrop-filter: blur(10px); /* Standard */
+    padding: 20px var(--safe-area-inset-right) 20px var(--safe-area-inset-left);
+    left: 50%;
+    transform: translateX(-50%);
+    /*width: 100vw;*/
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -173,7 +178,13 @@ footer {
     color: #fff;
     text-align: center;
     padding: 0.5em 0 35px;
-    margin-top: 20px;
+    width: 100vw;
+    /* Ensure it doesn't float over content */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 20px calc(-1 * var(--safe-area-inset-right)) calc(-1 * var(--safe-area-inset-bottom)) calc(-1 * var(--safe-area-inset-left));
 }
 
 .footer-content {
@@ -447,34 +458,4 @@ form button {
 
 .back-to-top .text {
     display: none;
-}
-
-/* Code pour gérer les iPhone avec encoche en mode paysage sous WebKit avec les Safe Areas */
-
-body {
-    padding: var(--safe-area-inset-top) var(--safe-area-inset-right) var(--safe-area-inset-bottom) var(--safe-area-inset-left);
-}
-
-nav {
-    padding-left: var(--safe-area-inset-left);
-    padding-right: var(--safe-area-inset-right);
-}
-
-nav {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    box-sizing: border-box;
-}
-
-footer {
-    width: 100vw;
-    margin-left: calc(-1 * var(--safe-area-inset-left));
-    margin-right: calc(-1 * var(--safe-area-inset-right));
-    /* Ensure it doesn't float over content */
-    position: relative;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    margin-bottom: calc(-1 * var(--safe-area-inset-bottom));
 }
