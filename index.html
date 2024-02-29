@@ -161,15 +161,50 @@
 
 <!-- Service Worker -->
 <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js').then(registration => {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }, err => {
-                console.log('ServiceWorker registration failed: ', err);
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to add custom styles for PWA mode
+        function adjustForPWA() {
+            const isPWA = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
+            if (isPWA) {
+                // Add custom CSS for PWA mode
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    /* Additional padding to accommodate the nav bar in PWA mode */
+                    body {
+                        padding-top: calc(var(--safe-area-inset-top) + 60px); /* Adjust as needed */
+                    }
+
+                    /* Style for the area around the notch/status bar */
+                    body::before {
+                        content: '';
+                        display: block;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: var(--safe-area-inset-top);
+                        background-color: #333; /* Match nav bar color or as desired */
+                        z-index: 999; /* Ensure it's below the nav bar */
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        }
+
+        adjustForPWA(); // Call the function to adjust styles for PWA
+
+        // Service Worker registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
             });
-        });
-    }
+        }
+    });
 </script>
+
 </body>
 </html>
