@@ -8,9 +8,15 @@ This website should work well on all devices, including mobile phones and tablet
 
 It was even optimized for safe areas on iPhone X and newer.
 
-## Screenshots
+### iPhone Optimization
 
 ![Website optimized for iPhones with notches](screenshots/iphone-15-pro-landscape-top.png "Website Optimization for Notch Displays")
+
+This screenshot demonstrates the website's optimization for iPhones with notch displays, ensuring a seamless user experience across all modern iPhone models.
+
+## Screenshots
+
+Below are additional screenshots showcasing different sections of the website as viewed in Safari on a Mac.
 
 ### Skills Section
 
