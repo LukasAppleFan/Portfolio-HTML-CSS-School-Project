@@ -196,7 +196,7 @@
                         let target = document.querySelector(this.getAttribute('href'));
                         if (target) {
                             // Adjust scroll position to account for fixed elements like the nav bar
-                            let offsetTop = target.offsetTop - 60; // Adjust this value based on your fixed elements' height
+                            let offsetTop = target.offsetTop + 40; // Adjust this value based on your fixed elements' height
                             window.scrollTo({
                                 top: offsetTop,
                                 behavior: "smooth"
