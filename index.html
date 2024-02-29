@@ -13,6 +13,23 @@
 
     <!-- Code pour les iPhone avec encoche en mode paysage -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Apple-specific configurations -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Example Progressive Web App">
+
+    <!-- Apple Icons -->
+    <link rel="apple-touch-icon" href="/icon/lowres.webp">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icon/hd_hi.ico">
+    <link rel="apple-touch-icon" sizes="96x96" href="/icon/hd_hi.ico">
+    <link rel="apple-touch-icon" sizes="128x128" href="/icon/hd_hi.ico">
+    <link rel="apple-touch-icon" sizes="256x256" href="/icon/hd_hi.ico">
+
+    <link rel="apple-touch-icon" href="resume.png">
 </head>
 <body id="top">
 <header>
@@ -142,5 +159,17 @@
 <!-- Bouton pour remonter en haut de la page -->
 <a href="#top" class="back-to-top"><span class="arrow">⬆︎</span><span class="text">Accueil</span></a>
 
+<!-- Service Worker -->
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, err => {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+</script>
 </body>
 </html>
