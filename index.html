@@ -188,22 +188,6 @@
                     }
                 `;
                 document.head.appendChild(style);
-
-                // Adjust scroll for anchor links in PWA mode
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        let target = document.querySelector(this.getAttribute('href'));
-                        if (target) {
-                            // Adjust scroll position to account for fixed elements like the nav bar
-                            let offsetTop = target.offsetTop - 40; // Adjust this value based on your fixed elements' height
-                            window.scrollTo({
-                                top: offsetTop,
-                                behavior: "smooth"
-                            });
-                        }
-                    });
-                });
             }
         }
 
