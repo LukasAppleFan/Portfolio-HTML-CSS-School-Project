@@ -8,4 +8,4 @@ This website should work well on all devices, including mobile phones and tablet
 
 It was even optimized for safe areas on iPhone X and newer.
 
-![Optimized for iPhone 15 Pro landscape](screenshots/iphone-15-pro-landscape-top.png "iPhone 15 Pro Optimization")
+![Website optimized for iPhones with notches](screenshots/iphone-15-pro-landscape-top.png "Website Optimization for Notch Displays")
