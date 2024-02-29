@@ -8,4 +8,18 @@ This website should work well on all devices, including mobile phones and tablet
 
 It was even optimized for safe areas on iPhone X and newer.
 
+## Screenshots
+
 ![Website optimized for iPhones with notches](screenshots/iphone-15-pro-landscape-top.png "Website Optimization for Notch Displays")
+
+### Skills Section
+
+![Skills section of the website](screenshots/skills-section-screenshot.png "Screenshot of the Skills Section")
+
+This screenshot displays the Skills section of the portfolio website, highlighting the various technical and soft skills presented in a visually engaging manner.
+
+### Projects Section
+
+![Projects section of the website](screenshots/projects-section-screenshot.png "Screenshot of the Projects Section")
+
+Here, the Projects section is shown, featuring a compilation of notable projects and assignments completed, each accompanied by brief descriptions and visuals where applicable.
