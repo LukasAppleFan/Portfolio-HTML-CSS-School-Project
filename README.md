@@ -6,6 +6,8 @@ This is a simple portfolio website for a school project. It is built using HTML 
 
 This website should work well on all devices, including mobile phones and tablets.
 
+This project has a [PWA branch](https://github.com/LukasMFR/Portfolio-HTML-CSS-School-Project/tree/pwa-version).
+
 It was even optimized for safe areas on iPhone X and newer.
 
 ### iPhone Optimization
